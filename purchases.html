@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOBPORTAL | APPLY</title>
+        
+</head>
+<body>
+    <!-- bootstrap navbar -->
+    <div class="logo mt-3 text-center">
+        <table>
+    <thead>
+        <tr>
+            {% for c in colnames %}
+                <th>{{c}}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in details %}
+            <tr>
+               {% for data in row %} 
+			   <td>{{data}}</td>
+			   {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+    </div>
+      <!-- navbar ends -->
+    
+</body>
+</html>
+
